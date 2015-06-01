@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Windows 10 context menus</title>
+  <style type="text/css">
+  div {
+    position: absolute;
+    cursor: default !important;
+  }
+  div.panel {
+    width: 202px;
+    border: 0.5px solid #a0a0a0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    transform: translate(250px, 0);
+  }
+  ul {
+    list-syle: none;
+    padding: 0; margin: 0;
+  }
+  li {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    font-family: "Segoe UI";
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 33px;
+  }
+  li:not(.divider):hover {
+    background-color: #e5e5e5;
+  }
+  li.divider {
+    background-color: #d7d7d7;
+    height: 0.5px;
+    padding: 0;
+    margin-top: 1.5px;
+    margin-bottom: 7px;
+  }
+  div.icon {
+    width: 16px;
+    height: 16px;
+    /*background-color: red;*/
+    top: 3px;
+    left: 8px;
+    background-image: url(checkmark.png);
+    background-size: 100%;
+  }
+  </style>
+</head>
+<body>
+
+<div style="width:268px; height:304px; background-image:url(preview.png); background-size:100%;">
+  <div class="panel" style="left:30px; top:22.5px">
+    <ul>
+      <li>Save Page as...</li>
+      <li class="divider"></li>
+      <li>View Background Image <div class="icon"></div></li>
+      <li>Select All</li>
+      <li class="divider"></li>
+      <li>View Page Source</li>
+      <li>View Page Info</li>
+      <li class="divider"></li>
+      <li>Inspect Element</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
